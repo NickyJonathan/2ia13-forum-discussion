@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server/server.go",
+      "use": "@vercel/go",
+      "config": {
+        "buildCommand": "go mod tidy && go build server.go"
+      }
+    }
+  ]
+}
