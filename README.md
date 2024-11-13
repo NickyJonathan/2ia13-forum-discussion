@@ -1,47 +1,45 @@
 # Forum
 
-> Projet réalisé par ROULLAND Roxanne, LAROUMANIE Gabriel, VASSEUR Alexis
+> Proyek dibuat oleh Nicky Jonathan Purba
 
-## Sommaire
-- [Project Structure](#project-structure)
-- [Setup](#setup)
-- [Start](#start)
+## Daftar Isi
+- Struktur Proyek
+- Persiapan
+- Menjalankan Server
 
-## Projet Structure
+## Struktur Proyek
 
-```text
 /
-	server/						The server is here
+	server/                     Server terdapat di sini
 		server.go
-	static/						HTML files are here
-		assets/					Contains all images or other files
-			profile/			All profiles pictures with the default one
+	static/                     File HTML terdapat di sini
+		assets/                 Memuat semua gambar atau file lainnya
+			profile/            Memuat semua gambar profil termasuk gambar default
 				default.png
-		css/					CSS files
-			admin/				CSS files for the admin pages
-			user/				CSS files for the user and auth pages
+		css/                    File CSS
+			admin/              File CSS untuk halaman admin
+			user/               File CSS untuk halaman pengguna dan autentikasi
 			...
-		error/					404 error page
+		error/                  Halaman error 404
 			/404.html
-		js/						All the JavaScript files
-			user/				JS for the user and auth pages
+		js/                     Memuat semua file JavaScript
+			user/               JS untuk halaman pengguna dan autentikasi
 			...
-		layout/					Layout file, act like a template for every pages
+		layout/                 File layout, bertindak sebagai template untuk setiap halaman
 			base.html
-		pages/					All the HTML pages are here
-			admin/				There are the admin one
-			user/				Here, for the user and auth pages
+		pages/                  Memuat semua halaman HTML
+			admin/              Halaman untuk admin
+			user/               Halaman untuk pengguna dan autentikasi
 			...
-	handler.go					Golang file to handle and render every pages
-	structures.go				Golang file to store the structures (use to send or receive data to the pages)
-	utils.go					All the useful functions
-```
+	handler.go                  File Golang untuk menangani dan merender setiap halaman
+	structures.go               File Golang untuk menyimpan struktur (digunakan untuk mengirim atau menerima data ke halaman)
+	utils.go                    Semua fungsi yang berguna
 
-## Setup
-To setup your forum, you need first to clone this repository.
-Then install sqlite3 and run in a terminal the file `forum.sql`.
-It will create all your database tables.
+## Persiapan
+Untuk mempersiapkan forum, pertama-tama Anda perlu mengkloning repository ini.
+Kemudian, instal sqlite3 dan jalankan file `forum.sql` di terminal.
+Ini akan membuat semua tabel pada basis data Anda.
 
-## Start
-To run the server, open a terminal and go to the project root directory.
-Then run the command `go run ./server/server.go`.
+## Menjalankan Server
+Untuk menjalankan server, buka terminal dan arahkan ke direktori root proyek.
+Kemudian jalankan perintah `go run ./server/server.go`.
